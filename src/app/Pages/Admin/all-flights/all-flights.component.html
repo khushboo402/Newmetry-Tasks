@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>All Flights</h2>
+    <div *ngIf="flights.length === 0" class="no-flights">No flights available.</div>
+    <div *ngFor="let flight of flights" class="flight-card">
+        <p><strong>Flight Name:</strong> {{ flight.name }}</p>
+        <p><strong>Destination:</strong> {{ flight.destination }}</p>
+        <p><strong>Departure Time:</strong> {{ flight.departureTime }}</p>
+        <p><strong>Arrival Time:</strong> {{ flight.arrivalTime }}</p>
+        <p><strong>Price:</strong> {{ flight.price }}</p>
+    </div>
+</div>
