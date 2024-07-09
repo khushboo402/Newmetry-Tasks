@@ -1,0 +1,56 @@
+/* General Styles */
+.row {
+    margin: 15px 0;
+}
+
+.col-12 {
+    padding: 10px;
+}
+
+/* Button Styles */
+.btn {
+    margin-left: 5px;
+}
+
+.text-end {
+    text-align: end;
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #c17676;
+    padding: 8px;
+}
+
+.table th {
+    background-color: #814f4f;
+    text-align: left;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+    .text-end {
+        text-align: center;
+    }
+}

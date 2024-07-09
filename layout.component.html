@@ -1,0 +1,34 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/airport">Airport</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/city">City</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/all-bookings">All-Bookings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/all-flights">All-Flights</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <router-outlet></router-outlet>
+</main>
+<footer>
+    <p>&copy; 2024 Flight Booking App. All rights reserved.</p>
+</footer>

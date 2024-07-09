@@ -1,0 +1,47 @@
+<div class="airport-container">
+    <h2>Airport Management</h2>
+    <!-- <div class="row">
+        <div class="col-12 text-end">
+            <button class="btn btn-primary" routerLink="/airport">Add New</button>
+        </div>
+    </div> -->
+    <!-- Form to Add/Edit Airport -->
+    <form (ngSubmit)="onSubmit()" #airportForm="ngForm">
+        <div class="form-group">
+            <label for="airportName">Airport Name:</label>
+            <input type="text" id="airportName" [(ngModel)]="airport.name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="airportCode">Airport Code:</label>
+            <input type="text" id="airportCode" [(ngModel)]="airport.code" name="code" required>
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" [(ngModel)]="airport.city" name="city" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Airport</button>
+    </form>
+
+    <!-- List of Airports -->
+    <table class="airport-table">
+        <thead>
+            <tr>
+                <th>Airport Name</th>
+                <th>Airport Code</th>
+                <th>City</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let airport of airports">
+                <td>{{ airport.name }}</td>
+                <td>{{ airport.code }}</td>
+                <td>{{ airport.city }}</td>
+                <td>
+                    <button (click)="editAirport(airport)" class="btn btn-secondary">Edit</button>
+                    <button (click)="deleteAirport(airport.id)" class="btn btn-danger">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
